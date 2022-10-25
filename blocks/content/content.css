@@ -1,0 +1,16 @@
+.content {
+    margin: 40px 0 66px;
+}
+
+@media screen and (max-width: 910px) {
+    .content {
+        margin-left: 27px;
+        margin-right: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 42px 19px 48px;
+    }
+}

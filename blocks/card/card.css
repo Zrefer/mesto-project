@@ -1,0 +1,9 @@
+.card {
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, max-content);
+    grid-template-rows: minmax(min-content, max-content) 1fr;
+    overflow: hidden;
+}

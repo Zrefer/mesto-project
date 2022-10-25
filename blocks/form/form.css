@@ -8,6 +8,6 @@
 
 @media screen and (max-width: 768px) {
     .form {
-        pad: 25px 22px;
+        padding: 25px 22px;
     }
 }

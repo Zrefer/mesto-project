@@ -24,7 +24,7 @@
 @import url('../blocks/card/__like/card__like.css');
 
 @import url('../blocks/popup/popup.css');
-@import url('../blocks/popup/_active/popup_active.css');
+@import url('../blocks/popup/_opened/popup_opened.css');
 
 @import url('../blocks/form/form.css');
 @import url('../blocks/form/__close-button/form__close-button.css');

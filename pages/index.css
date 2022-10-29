@@ -1,7 +1,7 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
 
-@import url('../blocks/link/link.css');
+@import url('../blocks/button/button.css');
 @import url('../blocks/page/page.css');
 
 @import url('../blocks/header/header.css');
@@ -18,20 +18,23 @@
 @import url('../blocks/profile/__add-button/profile__add-button.css');
 
 @import url('../blocks/cards/cards.css');
+@import url('../blocks/cards/__list/cards__list.css');
+
 @import url('../blocks/card/card.css');
 @import url('../blocks/card/__image/card__image.css');
 @import url('../blocks/card/__title/card__title.css');
 @import url('../blocks/card/__like/card__like.css');
 
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__copyright/footer__copyright.css');
+
 @import url('../blocks/popup/popup.css');
+@import url('../blocks/popup/__form-container/popup__form-container.css');
+@import url('../blocks/popup/__close-button/popup__close-button.css');
 @import url('../blocks/popup/_opened/popup_opened.css');
 
 @import url('../blocks/form/form.css');
-@import url('../blocks/form/__close-button/form__close-button.css');
 @import url('../blocks/form/__title/form__title.css');
 @import url('../blocks/form/__fieldset/form__fieldset.css');
 @import url('../blocks/form/__field/form__field.css');
 @import url('../blocks/form/__submit-button/form__submit-button.css');
-
-@import url('../blocks/footer/footer.css');
-@import url('../blocks/footer/__copyright/footer__copyright.css');

@@ -3,10 +3,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 22px;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 2px;
     box-sizing: border-box;
     height: 50px;
     margin-left: auto;
+    min-width: 150px;
     width: 150px;
 }
 

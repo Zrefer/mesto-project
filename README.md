@@ -1,11 +1,18 @@
 # Project Mesto
 
-## Социальная фото-сеть
+## Описание и технологии
 
-### Figma
+> **Проект социальной сети с возможностью выкладывать фотографии и ставить оценки**
+>
+> **Используются следующие технологии**
+>
+> - HTML
+> - CSS
 
-* [Ссылка на макет](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+### Макет проекта в Figma
 
-### GitHub Pages
+- [Ссылка на макет](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 
-* [Ссылка](https://zrefer.github.io/mesto-project/)
+### Демонстрационная версия
+
+- [Ссылка](https://zrefer.github.io/mesto-project/)

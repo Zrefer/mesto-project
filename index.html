@@ -15,57 +15,61 @@
       <img src="./images/avatar.jpg" alt="Аватар" class="profile__avatar">
       <div class="profile__info">
         <h1 class="profile__name">Жак-Ив Кусто</h1>
-        <a href="#" class="link profile__edit-button"></a>
+        <button class="button profile__edit-button" type="button"></button>
         <p class="profile__description">Исследователь океана</p>
       </div>
-      <a href="#" class="link profile__add-button"></a>
+      <button class="button profile__add-button" type="button"></button>
     </section>
-    <ul class="cards">  
-      <li class="card">
-        <img src="./images/karachaevsk.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Карачаевск</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-      <li class="card">
-        <img src="./images/elbrus.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Гора Эльбрус</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-      <li class="card">
-        <img src="./images/dombai.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Домбай</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-      <li class="card">
-        <img src="./images/elbrus.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Гора Эльбрус</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-      <li class="card">
-        <img src="./images/dombai.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Домбай</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-      <li class="card">
-        <img src="./images/karachaevsk.jpg" alt="Изображение карточки" class="card__image">
-        <h2 class="card__title">Карачаево-Черкесия</h2>
-        <a href="#" class="card__like"></a>
-      </li>
-    </ul>
+    <section class="cards">
+      <ul class="cards__list">  
+        <li class="card">
+          <img src="./images/karachaevsk.jpg" alt="Изображение Карачаевска" class="card__image">
+          <h2 class="card__title">Карачаевск</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+        <li class="card">
+          <img src="./images/elbrus.jpg" alt="Изображение Эльбруса" class="card__image">
+          <h2 class="card__title">Гора Эльбрус</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+        <li class="card">
+          <img src="./images/dombai.jpg" alt="Изображение Домбая" class="card__image">
+          <h2 class="card__title">Домбай</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+        <li class="card">
+          <img src="./images/elbrus.jpg" alt="Изображение Эльбруса" class="card__image">
+          <h2 class="card__title">Гора Эльбрус</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+        <li class="card">
+          <img src="./images/dombai.jpg" alt="Изображение Домбая" class="card__image">
+          <h2 class="card__title">Домбай</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+        <li class="card">
+          <img src="./images/karachaevsk.jpg" alt="Изображение Карачаевска" class="card__image">
+          <h2 class="card__title">Карачаево-Черкесия</h2>
+          <button class="button card__like" type="button"></button>
+        </li>
+      </ul>
+    </section>
   </main>
-  <section class="popup">
-    <form class="form">
-      <a href="#" class="link form__close-button"></a>
-      <h2 class="form__title">Редактировать профиль</h2>
-      <fieldset class="form__fieldset">
-        <input type="text" placeholder="Имя" value="Жак-Ив Кусто" required class="form__field">
-        <input type="text" placeholder="О себе" value="Исследователь океана" class="form__field">
-      </fieldset>
-      <input type="submit" value="Сохранить" class="form__submit-button">
-    </form>
-  </section>
   <footer class="footer">
-    <p class="footer__copyright">© 2020 Mesto Russia</p>
+    <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
   </footer>
+  <div class="popup">
+    <div class="popup__form-container">
+      <form class="form" id="profile-edit">
+        <h2 class="form__title">Редактировать профиль</h2>
+        <fieldset class="form__fieldset">
+          <input type="text" id="name-field" name="name" placeholder="Имя" value="Жак-Ив Кусто" required class="form__field">
+          <input type="text" id="description-field" name="description" placeholder="О себе" value="Исследователь океана" class="form__field">
+        </fieldset>
+        <button type="submit" class="button form__submit-button">Сохранить</button>
+      </form>
+      <button class="button popup__close-button" form="profile-edit" formaction="#" formmethod="post" type="submit"></button>
+    </div>
+  </div>
 </body>
 </html>

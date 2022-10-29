@@ -1,0 +1,15 @@
+.popup__form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 36px;
+    position: relative;
+    width: 430px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup__form-container {
+        padding: 25px 22px;
+        width: 282px;
+    }
+}

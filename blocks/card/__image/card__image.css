@@ -1,5 +1,7 @@
 .card__image {
+    cursor: pointer;
     grid-column: 1/-1;
-    height: 100%;
+    grid-row: 1;
+    height: 282px;
     width: 100%;
 }

@@ -4,6 +4,6 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr minmax(min-content, max-content);
-    grid-template-rows: minmax(min-content, max-content) 1fr;
+    grid-template-rows: 1fr minmax(min-content, max-content);
     overflow: hidden;
 }

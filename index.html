@@ -21,38 +21,7 @@
       <button class="button profile__add-button" type="button"></button>
     </section>
     <section class="cards">
-      <ul class="cards__list">  
-        <li class="card">
-          <img src="./images/karachaevsk.jpg" alt="Изображение Карачаевска" class="card__image">
-          <h2 class="card__title">Карачаевск</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-        <li class="card">
-          <img src="./images/elbrus.jpg" alt="Изображение Эльбруса" class="card__image">
-          <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-        <li class="card">
-          <img src="./images/dombai.jpg" alt="Изображение Домбая" class="card__image">
-          <h2 class="card__title">Домбай</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-        <li class="card">
-          <img src="./images/elbrus.jpg" alt="Изображение Эльбруса" class="card__image">
-          <h2 class="card__title">Гора Эльбрус</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-        <li class="card">
-          <img src="./images/dombai.jpg" alt="Изображение Домбая" class="card__image">
-          <h2 class="card__title">Домбай</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-        <li class="card">
-          <img src="./images/karachaevsk.jpg" alt="Изображение Карачаевска" class="card__image">
-          <h2 class="card__title">Карачаево-Черкесия</h2>
-          <button class="button card__like" type="button"></button>
-        </li>
-      </ul>
+      <ul class="cards__list"></ul>
     </section>
   </main>
   <footer class="footer">
@@ -63,13 +32,42 @@
       <form class="form" id="profile-edit">
         <h2 class="form__title">Редактировать профиль</h2>
         <fieldset class="form__fieldset">
-          <input type="text" id="name-field" name="name" placeholder="Имя" value="Жак-Ив Кусто" required class="form__field">
-          <input type="text" id="description-field" name="description" placeholder="О себе" value="Исследователь океана" class="form__field">
+          <input type="text" id="name-field" name="name" placeholder="Имя" required class="form__field">
+          <input type="text" id="description-field" name="description" placeholder="О себе" class="form__field">
         </fieldset>
         <button type="submit" form="profile-edit" formaction="#" formmethod="post" class="button form__submit-button">Сохранить</button>
       </form>
       <button class="button popup__close-button" type="button"></button>
     </div>
   </div>
+  <div class="popup">
+    <div class="popup__form-container">
+      <form class="form" id="add-card">
+        <h2 class="form__title">Новое место</h2>
+        <fieldset class="form__fieldset">
+          <input type="text" id="cardName-field" name="name" placeholder="Название" required class="form__field">
+          <input type="text" id="cardLink-field" name="link" placeholder="Ссылка на картинку" required class="form__field">
+        </fieldset>
+        <button type="submit" form="add-card" formaction="#" formmethod="post" class="button form__submit-button">Создать</button>
+      </form>
+      <button class="button popup__close-button" type="button"></button>
+    </div>
+  </div>
+  <div class="popup">
+    <figure class="popup__image-container">
+      <img alt="popup image" class="popup__image">
+      <figcaption class="popup__image-caption"></figcaption>
+      <button class="button popup__close-button" type="button"></button>
+    </figure>
+  </div>
+  <template id="card-template">
+    <li class="card">
+      <img class="card__image">
+      <button class="button card__delete" type="button"></button>
+      <h2 class="card__title"></h2>
+      <button class="button card__like" type="button"></button>
+    </li>
+  </template>
+  <script src="./script.js"></script>
 </body>
 </html>

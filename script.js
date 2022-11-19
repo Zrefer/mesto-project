@@ -85,7 +85,7 @@ function addCard(card) {
     cardsList.prepend(card);
 }
 
-function cardAddSubmitHandler(evt) {
+function addСardSubmitHandler(evt) {
     evt.preventDefault();
 
     const newCard = createCard(cardAddName.value, cardAddLink.value);
@@ -105,6 +105,6 @@ profileEditButton.addEventListener('click', openProfileEdit);
 profileEditForm.addEventListener('submit', profileEditSubmitHandler);
 
 cardAddButton.addEventListener('click', openAddCard);
-cardAddForm.addEventListener('submit', cardAddSubmitHandler);
+cardAddForm.addEventListener('submit', addСardSubmitHandler);
 
 initialCards.forEach((card) => addCard(createCard(card.name, card.link)));
